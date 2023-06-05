@@ -506,7 +506,7 @@ input {
 }
 
 .card-2 .card-heading {
-  background: url("../images/bg-heading-02.jpg") top left/cover no-repeat;
+  background: url("../images/bg-migraine.jpg") top left/cover no-repeat;
   width: 29.1%;
   display: table-cell;
 }
@@ -531,4 +531,8 @@ input {
     display: block;
     padding: 60px 50px;
   }
+}
+
+.left-text{
+  text-align: start;
 }

@@ -421,8 +421,6 @@ input {
    #TITLE
    ========================================================================== */
 .title {
-  text-transform: uppercase;
-  font-weight: 700;
   margin-bottom: 37px;
 }
 

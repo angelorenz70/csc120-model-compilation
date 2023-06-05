@@ -65,10 +65,18 @@
             <div class="wrapper wrapper--w680">
             <div class="card card-1">
                 <div class="card-heading"></div>
+                  <div id="image_inline">
+                    <h4>Click here to download the sample image</h4>
+                    <div>
+                      <a style="color:black" href="{{url_for('static', filename='assets/leukemia/images/10.bmp')}}" download>image1</a>
+                      <a style="color:black" href="{{url_for('static', filename='assets/leukemia/images/100.bmp')}}" download>image2</a>
+                      <a style="color:black" href="{{url_for('static', filename='assets/leukemia/images/1000.bmp')}}" download>image3</a>
+                    </div>
+                  </div>
                   <div class="card-body">
-                      <h2 class="title">Acute lymphocytic leukemia (ALL)</h2>
+                      <h2 style="color: black;font-size: 23px;" class="title">Acute lymphocytic leukemia (ALL)</h2>
                       <!--FORM-->
-                      <h1>Uploade Image Cell</h1>
+                      <h4 style="color: black;">Upload Image Cell</h4>
                       <div id="uploaded-image-container"></div>
                       <form method="POST" action="/process" enctype="multipart/form-data">
                         <input type="file" name="image" onchange="previewImage(event)">

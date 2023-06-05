@@ -3,9 +3,9 @@ body{
     background: radial-gradient(circle, rgba(125,146,255,1) 0%, rgba(42,0,34,1) 100%);
 }
 .gallery{
-display: flex;
-height: 20rem;
-gap: 1rem;
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
 }
 
 .gallery > div{

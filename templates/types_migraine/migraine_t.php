@@ -36,12 +36,12 @@
                         <div class="card-heading" style="background-image: url('{{url_for('static', filename='assets/types_migraine/images/bg-m.jpg')}}');"></div>
                         <div class="card-body">
                             <h2 class="title">What's your Migraine?</h2>
-                            <form method="POST" action="prediction.php">
+                            <form method="POST" action="/typesmigraine">
                                 <div class="input-group">
-                                    <input class="input--style-2" type="text" placeholder="Name" name="name">
+                                    <input class="input--style-2" type="text" placeholder="Name" name="name" required>
                                 </div>
                                 <div class="input-group">
-                                    <input class="input--style-2" type="number" min="1" placeholder="Age" name="age">
+                                    <input class="input--style-2" type="number" min="1" placeholder="Age" name="age" required>
                                 </div> 
 
                                 <!--row 1 -->
@@ -355,10 +355,10 @@
                     </div>
                 </div>
                 <form method="GET" action="/">
-                <div class="p-t-20">
+                  <div class="p-t-20">
                     <button class="btn btn--radius btn--green" type="submit">Home</button>
-                </div>
-            </form>
+                 </div>
+               </form>
             </header>
 
         </div>
