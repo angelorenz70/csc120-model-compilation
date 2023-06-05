@@ -29,10 +29,11 @@
             <!-- Masthead-->
             <header class="masthead">
                 <div class="gallery">
-                    <div id="energy_e" style="background-image: url('{{url_for('static', filename='assets/img/bg-energy-efficiency.jpg')}}');" class="center"><p><a href="/energy_efficiency">ENERGY EFFICIENCY<h6 id="text1">linear Regression</h6></a></p></div>
+                    <div id="energy_e" style="background-image: url('{{url_for('static', filename='assets/img/energy_efficiency2.jpg')}}');" class="center"><p><a href="/energy_efficiency">ENERGY EFFICIENCY<h6 id="text1">linear Regression</h6></a></p></div>
                     <div id="heart_d" style="background-image: url('{{url_for('static', filename='assets/img/bg-heart-disease.jpg')}}');" class="center"><p><a href="/heart_disease">HEART DISEASE <h6 id="text1">logistical Regression</h6></a></p></div>
                     <div id="t_migraine" style="background-image: url('{{url_for('static', filename='assets/img/bg-migraine1.jpg')}}');" class="center"><p><a href="/types_migraine">TYPES OF MIGRAINE <h6 id="text1">Neural Network</h6></a></p></div>
-                    <div id="t_migraine" style="background-image: url('{{url_for('static', filename='assets/img/Leukemia.jpg')}}');" class="center"><p><a href="/leukemia">LEUKEMIA <h6 id="text1">Convolutional NN</h6></a></p></div>
+                    <div id="t_migraine" style="background-image: url('{{url_for('static', filename='assets/img/Leukemia2.jpg')}}');" class="center"><p><a href="/leukemia">LEUKEMIA <h6 id="text1">Convolutional NN</h6></a></p></div>
+                    <div id="t_migraine" style="background-image: url('{{url_for('static', filename='assets/img/rl.png')}}');" class="center"><p><a href="">FROZEN LAKE <h6 id="text1">Reinfrocement Learning</h6></a></p></div>
                 </div>
             </header>
         </div>
