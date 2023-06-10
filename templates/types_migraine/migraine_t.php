@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Intelligent System Models</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+         <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/img/neural-network.png')}}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->

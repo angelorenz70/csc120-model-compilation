@@ -26,6 +26,7 @@ body{
     position: relative;
 }
 #demotext {
+    margin-top: 35px;
     padding-top: 3.5rem;
     padding-bottom: 2rem;
     color: #CC0066;
