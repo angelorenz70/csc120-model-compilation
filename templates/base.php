@@ -14,39 +14,21 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{{url_for('static', filename='assets/energy_efficiency/css/styles.css')}}" rel="stylesheet" />
-        <link href="{{url_for('static', filename='assets/energy_efficiency/css/main.css')}}" rel="stylesheet" />
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
         <link rel="stylesheet" href="{{url_for('static', filename='css/design.css')}}">
-    </head>
-    <body id="page-top">
-        <div class="container" id="main1">
-            {% include 'intro_model.php' %}
-            <!-- Masthead-->
-            <header class="masthead">
-                <div class="wrapper wrapper--w680"> 
-                    <div class="card card-1">
-                        <div class="card-heading"></div>
-                        <div class="card-body">
-                            <h2 class="title" id="black_">Energy Efficiency Prediction</h2>
-                            <h3>Cooling Prediction: {{ prediction1 }}</h3>
-                            <h3>Heating Prediction: {{ prediction2 }}</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-                <form method="GET" action="/">
-                <div class="p-t-20">
-                    <button class="btn btn--radius btn--green" type="submit">Home</button>
-                </div>
-            </form>
-            </header>
-        </div>
+        {% block content %}
+             <!-- Navigation-->
+             
+             
+            <!-- Default content of the child page -->
+        {% endblock %}
+
 
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="{{url_for('static', filename='assets/energy_efficiency/js/global.js')}}"></script>
+        <script src="js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
