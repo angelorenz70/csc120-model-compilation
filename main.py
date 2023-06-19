@@ -86,6 +86,25 @@ def types_migraine():
 def leukemia():
     return render_template('leukemia/index.html')
 
+#DOCUMENTATION
+@app.route('/energy_efficiency/doc')
+def energy_efficiency_doc():
+    return render_template('documentation/energy_efficiency.php')
+@app.route('/heart_disease/doc')
+def heart_disease_doc():
+    return render_template('documentation/heart_disease.php')
+@app.route('/types_migraine/doc')
+def types_migraine_doc():
+    return render_template('documentation/types_migraine.php')
+@app.route('/leukemia/doc')
+def leukemia_doc():
+    return render_template('documentation/leukemia.php')
+@app.route('/reinforcementLearning/doc')
+def reinforcementLearning():
+    return render_template('documentation/ReinforcementLearning.php')
+
+    
+
 #END 
 
 #START - RESULT MODEL UI

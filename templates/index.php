@@ -37,11 +37,11 @@
                                     DOCUMENTATION
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#energy-efficiency-doc">Energy Efficiency (LinR) Doc</a></li>
-                                    <li><a class="dropdown-item" href="#heart-disease-doc">Heart Disease (LogR) Doc</a></li>
-                                    <li><a class="dropdown-item" href="#migraine-doc">Types of Migraine (NN) Doc</a></li>
-                                    <li><a class="dropdown-item" href="#leukemia-doc">Leukemia (CNN) Doc</a></li>
-                                    <li><a class="dropdown-item" href="#frozen-lake-doc">Frozen Lake (RL) Doc</a></li>
+                                    <li><a class="dropdown-item" href="/energy_efficiency/doc">Energy Efficiency (LinR) Doc</a></li>
+                                    <li><a class="dropdown-item" href="/heart_disease/doc">Heart Disease (LogR) Doc</a></li>
+                                    <li><a class="dropdown-item" href="/types_migraine/doc">Types of Migraine (NN) Doc</a></li>
+                                    <li><a class="dropdown-item" href="/leukemia/doc">Leukemia (CNN) Doc</a></li>
+                                    <li><a class="dropdown-item" href="/reinforcementLearning/doc">Frozen Lake (RL) Doc</a></li>
                                 </ul>
                             </li>
                         </ul>
