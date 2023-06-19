@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Intelligent System Models</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/img/neural-network.png')}}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename='assets/types_migraine/css/styles1.css')}}" rel="stylesheet" />
+        <link href="{{url_for('static', filename='assets/types_migraine/css/main1.css')}}" rel="stylesheet" />
+        <link href="{{url_for('static', filename='assets/types_migraine/css/design1.css')}}" rel="stylesheet" />
+        
+
+    </head>
+    <body id="page-top">
+        <div class="container" id="main1">
+            <h1 id="demotext">INTELLIGENT SYSTEM MODELS</h1>
+            <a class="gradient-button" ><p id="black_">
+                Our team has embarked on a journey to create an intelligent system model that will 
+                revolutionize the way we think about data. With each member contributing their 
+                expertise and creativity, we are crafting a masterpiece that will stand the test 
+                of time. Our collaboration is fueled by a passion for innovation and a 
+                commitment to excellence, and together, we are forging a path towards a brighter future.</p></a>
+            <!-- Masthead-->
+            <header class="masthead">
+                <div class="wrapper wrapper--w960">
+                    <div class="card card-2">
+                        <div class="card-heading" ></div>
+                        <div class="card-body">
+                            <h2 class="title">What's your Migraine?</h2>
+                            <h3 style="color:black; padding-bottom: 20px; text-align: start; "><b>Prediction: {{ prediction }}</b></h3>
+                            <h6 style="color:black; padding-bottom: 5px; text-align: start;"><b> Prediction of all classification: </b></h6>
+                            <table style="color:black;text-align: start;padding: 20px;margin: 20px;">
+                                <tr>
+                                    <th>Name</th>
+                                    <th style="padding-left: 20px;">Prediction</th>
+                                </tr>
+                                <tr>
+                                    <td>TYPICAL AURA WITH MIGRAINE</td>
+                                    <td style="padding-left: 20px;">{{ probabilities1 }}</td>
+                                </tr>
+                                <tr>
+                                    <td>TYPICAL AURA WITHOUT MIGRAINE</td>
+                                    <td style="padding-left: 20px;">{{ probabilities2 }}</td>
+                                </tr>
+                                <tr>
+                                    <td>MIGRAINE WITHOUT AURA</td>
+                                    <td style="padding-left: 20px;">{{ probabilities3 }}</td>
+                                </tr>
+                                <tr>
+                                    <td>BASILA-TYPE AURA</td>
+                                    <td style="padding-left: 20px;">{{ probabilities4 }}</td>
+                                </tr>
+                                <tr>
+                                    <td>SPORADIC HEMIPLEGIC MIGRAINE</td>
+                                    <td style="padding-left: 20px;">{{ probabilities5 }}</td>
+                                </tr>
+                                <tr>
+                                    <td>FAMILIAL HEMIPLEGIC MIGRAINE</td>
+                                    <td style="padding-left: 20px;">{{ probabilities6 }}</td>
+                                </tr>
+                                <tr>
+                                    <td>OTHER</td>
+                                    <td style="padding-left: 20px;">{{ probabilities7 }}</td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                    </div>
+                    <form method="GET" action="/">
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn--green" type="submit">Home</button>
+                            </div>
+                    </form>
+            </header>
+        </div>
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static', filename='assets/types_migraine/js/scripts.js')}}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
+
+
+
+                   
