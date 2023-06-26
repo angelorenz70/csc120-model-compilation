@@ -86,6 +86,10 @@ def types_migraine():
 def leukemia():
     return render_template('leukemia/index.html')
 
+@app.route('/rl', methods=['GET'])
+def rl():
+    return render_template('rl.html')
+
 #DOCUMENTATION
 @app.route('/energy_efficiency/doc')
 def energy_efficiency_doc():
@@ -240,6 +244,8 @@ def typesmigraine():
                         probabilities5="{:.2f}".format(probabilities[4]),
                         probabilities6="{:.2f}".format(probabilities[5]),
                         probabilities7="{:.2f}".format(probabilities[6]))
+
+
 #PROCESS MODEL END
 
 # Define a route for displaying the processed image
