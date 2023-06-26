@@ -1,6 +1,6 @@
 body{
-    background: rgb(125,146,255);
-    background: radial-gradient(circle, rgba(125,146,255,1) 0%, rgba(42,0,34,1) 100%);
+    background: rgb(23, 60, 244);
+    background: radial-gradient(circle, rgba(192, 192, 192) 0%, rgba(0, 53, 128) 100%);
 }
 .gallery{
     display: flex;
@@ -44,8 +44,8 @@ body{
     margin-top: 35px;
     padding-top: 3.5rem;
     padding-bottom: 2rem;
-    color: #CC0066;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: #090004;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #02036a 0px 0px 20px, #1909d0 0px 0px 30px, #0b07e5 0px 0px 40px, #1731f0 0px 0px 50px, #185ced 0px 0px 75px;
 }
 .center p {
     color: #FFFFFF;
@@ -58,7 +58,7 @@ body{
     font-style: normal;
     font-variant: normal;
     text-transform: uppercase;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(19, 19, 19), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,19 +87,18 @@ header.masthead {
 }
 
 .container h2{
-    color: #ccb800;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: #010101;
     text-align: left;
 }
 .container h3{
-    color: #CC0066;
+    color: #090909;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
     text-align: center;
 }
 
 .container h4{
-    color: #CC0066;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: #030303;
+    text-shadow: #FFF 0px 0px 5px;
     text-align: center;
 }
 
@@ -117,8 +116,8 @@ header.masthead {
 }
 
 .container p{
-    color: #00b4cc;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: #080808;
+    text-shadow: #FFF 0px 0px 5px;
     text-align:center;
 }
 
@@ -132,7 +131,7 @@ header.masthead {
 }
 
 .gradient-button {
-    background: linear-gradient(to bottom, #ee0505, #f519d7);
+    background: linear-gradient(to bottom, #dedcdc, #3535ce);
     border-radius: 20px;
     box-shadow: 0 8px 15px rgba(4, 204, 211, 0.1);
     color: #000000;
@@ -160,3 +159,4 @@ a{
     text-align: center;
     font-size: 15px;
 }
+
