@@ -192,7 +192,9 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Hyperparameters</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/hyperparameters.png')}}" alt="..." />
-                                    <p>When it comes to Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, there are a few hyperparameters that they share in common. The learning rate determines how fast the agent learns from its experiences, sort of like the speed at which it adapts to new information. The entropy coefficient in SAC controls the balance between exploring new actions and exploiting learned knowledge. It's like a knob that adjusts how much the agent values discovering new things versus sticking to what it knows. The discount factor, often called gamma, affects how much the agent cares about future rewards compared to immediate rewards. It's like deciding how much patience the agent has in considering long-term gains. PPO uses an advantage estimate, which is like a measure of how good the agent's actions were compared to what it expected. This helps in understanding the direction for updating the policy. </p>
+
+                                    <p>The batch size determines the number of samples the model processes at once, with a value of 1024. The buffer size is the capacity for storing data samples, set at 10240. The learning rate, or the step size in updating the model, is 3.0e-4, and it follows a linear schedule. <br> For the Proximal Policy Optimization (PPO) algorithm, the beta value is 3.0e-3, which controls the strength of the policy change. The beta schedule is constant, meaning it remains the same throughout training. The epsilon value is 0.2, representing the clipping parameter to limit policy changes, and it follows a linear schedule. The lambda value is 0.95, determining the weight between old and new policy updates. The model goes through 3 epochs of training, and it does not have a shared critic network for value estimation.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 1</strong>
@@ -220,7 +222,9 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Neural Network Model</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/network.png')}}" alt="..." />
-                                    <p>In both Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, a neural network is typically employed to represent the policy or value function. This neural network is usually designed with multiple layers, referred to as a deep neural network. Each layer consists of a number of neurons that process and transform the input data. The configuration of the neural network commonly includes parameters such as the number of layers, the number of neurons in each layer, and the activation functions used between layers. These choices impact the capacity and complexity of the neural network, allowing it to capture the intricate patterns and representations required for learning and decision-making.</p>
+
+                                    <p>This configuration specifies the settings for a neural network. It uses a simple encoding method for visual input and does not normalize the data. The network has four layers with 128 hidden units each. Additionally, the memory component of the network has a sequence length of 64 and a memory size of 256.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 2</strong>
@@ -248,7 +252,9 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Trainer Configuration</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Trainer Configuration Common to all trainers.png')}}" alt="..." />
-                                    <p>The parameters you mentioned have specific roles in the context of reinforcement learning algorithms. "max_step" refers to the maximum number of steps or interactions the agent will take during training. In this case, it is set to 0.5 million, indicating a predefined limit on the training duration. "time_horizon" determines the number of steps the agent considers as a single trajectory before updating its policy. A value of 64 means the agent updates its policy every 64 steps. "summary_freq" specifies how often the algorithm collects and logs summary information, such as rewards or losses. In this case, it occurs every 10,000 steps. "keep_checkpoints" is the number of recent checkpoints the algorithm saves for backup or analysis purposes, with 5 indicating the storage of the five most recent checkpoints. "checkpoint_interval" indicates the frequency at which the algorithm saves a checkpoint, allowing for later model restoration or evaluation. In this case, it occurs every 1,000 steps. The "threaded" parameter determines whether the algorithm uses multiple threads for parallel execution. If set to "false," the algorithm runs in a single thread. "init_path" specifies the path to an initial model or checkpoint for the algorithm to start from, and in this case, it is set to null, indicating no initial model is provided. These parameter values are crucial for controlling and fine-tuning the behavior and performance of the reinforcement learning algorithm in various tasks and environments.</p>
+
+                                    <p>These settings pertain to a specific system or program. They define various parameters and configurations. The purpose of these settings is to control aspects such as the maximum number of steps, time horizon, frequency of generating summaries, checkpoint management, threading behavior, and initialization path for the system or program.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 3</strong>
@@ -350,7 +356,6 @@
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_GAIL Loss.png')}}" alt="..." />
 
                                     <p>GAIL is an algorithm that learns from expert demonstrations and uses a combination of generator and discriminator networks. The generator network tries to imitate the expert's behavior by generating actions, while the discriminator network predicts whether the actions are from the expert or the generator. The generator improves by minimizing the loss that measures the difference between the generator's actions and the expert's actions predicted by the discriminator.</p>
-
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 8</strong>
