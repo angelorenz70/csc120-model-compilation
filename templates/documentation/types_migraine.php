@@ -63,6 +63,18 @@
                             </p></div>
                         </div>
                     </li>
+                    <li class="">
+                    <div class="timeline-image">
+                            <h4>How 
+                                <br/>
+                                to Use 
+                                <br/>
+                                the Model?</h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-body"><p class=" ">STEP 1: Go to home. <br> STEP 2: Click the container of the model. <br> STEP 3: Fill out the following requirements. <br> STEP 4: Then click enter or predict to see the predicted result. </p></div>
+                        </div>
+                    </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
@@ -243,8 +255,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Attributes of the Migraine Dataset</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine5.jpg')}}" alt="..." />
                                     <p>Here we can see the 27 attributes of the dataset and the corresponding counts of every attributes which is basically based on the age provided.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine5.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -266,9 +279,10 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Number of Data in Every Type of Migraine</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine6.jpg')}}" alt="..." />
                                     <p>Here we can see the total count of data in every type of migraine, we have 0 for Typical Aura with Migraine, 1 for Typical Aura without Migraine, 
                                         2 for Migraine without Aura, 3 for Basilar-Type Aura, 4 for Sporadic Hemiplegic Migraine, 5 for Familial Hemiplegic Migraine, and 6 for Other.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine6.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -290,15 +304,17 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Number of Data Based on Age and Frequency</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine7.jpg')}}" alt="..." />
                                     <p>Here we can see the total count of data based on age from the dataset that we collected.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine7.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 3</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine8.jpg')}}" alt="..." />
                                     <p>And here we can see the total count of data based on frequency or how often a person experiences migraine attacks from the dataset that we collected.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine8.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 4</strong>
@@ -325,8 +341,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Graphical Representation of Frequency Variable</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine9.jpg')}}" alt="..." />
                                     <p>We have the graphical representation of the distribution of frequency variable.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine9.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -348,8 +365,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Graphical Representation of a Matrix</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine10.jpg')}}" alt="..." />
                                     <p>A Heatmap (a graphical representation of a matrix in which the values are represented by colors) of the Correlation between the Features.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine10.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -371,36 +389,41 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Pairwise Relationships of Every Attributes</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine11.jpg')}}" alt="..." />
                                     <p>A pair plot or a scatter plot that visualizes the pairwise relationships between 'Age', 'Duration', 'Frequency', 'Location', and 'Character'.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine11.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 7</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine12.jpg')}}" alt="..." />
                                     <p>A pair plot or a scatter plot that visualizes the pairwise relationships between 'Intensity', 'Nausea', 'Vomit', ‘Phonophobia', and 'Photophobia'.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine12.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 8</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine13.jpg')}}" alt="..." />
                                     <p>A pair plot or a scatter plot that visualizes the pairwise relationships between 'Visual', 'Sensory', 'Dysphasia', 'Dysarthria', and 'Vertigo.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine13.jpg')}}" alt="..." />
+                                   
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 9</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine14.jpg')}}" alt="..." />
                                     <p>A pair plot or a scatter plot that visualizes the pairwise relationships between 'Sensory', 'Dysphasia', 'Dysarthria', 'Vertigo', and 'Tinnitus'.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine14.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 10</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine15.jpg')}}" alt="..." />
                                     <p>A pair plot or a scatter plot that visualizes the pairwise relationships between 'Hypoacusis', 'Diplopia', 'Defect', 'Ataxia', 'Conscience', 'Paresthesia', and 'DPF'.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine15.jpg')}}" alt="..." />
+                                   
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 11</strong>
@@ -427,8 +450,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Accuracy of the Model</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine16.jpg')}}" alt="..." />
                                     <p>Here we can see the total accuracy of the model after evaluating the model to the testing data.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine16.jpg')}}" alt="..." />
+                                   
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -450,8 +474,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Scale Input Features</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine17.jpg')}}" alt="..." />
                                     <p>Here we can see the code for scale input Features and the splitting of data into training and testing sets.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine17.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -473,8 +498,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Building the Model</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine18.jpg')}}" alt="..." />
                                     <p>Here we have the sequential code for building the neural network model.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine18.jpg')}}" alt="..." />
+                                   
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -496,9 +522,10 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Training the Model</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine19.jpg')}}" alt="..." />
                                     <p>Here we have the code for compiling the model with categorical cross-entropy
                                         loss and Adam optimizer, and train model on training data.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine19.jpg')}}" alt="..." />
+                                   
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -520,8 +547,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Possible Probabilities</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine20.jpg')}}" alt="..." />
                                     <p>Here we have the code for getting the predicted probabilities from neural network model.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine20.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -543,8 +571,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Predicted Labels</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine21.jpg')}}" alt="..." />
                                     <p>This is the code for printing the predicted labels and we can also see the output.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_migraine/migraine21.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close

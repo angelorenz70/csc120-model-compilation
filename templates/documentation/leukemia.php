@@ -52,6 +52,18 @@
                             <div class="timeline-body"><p class=" ">The code for model compilation in a deep learning framework, total time of training, to get the value prediction and to achieve the desired accuracy of the model (see Figure 9-12).</p></div>
                         </div>
                     </li>
+                    <li class="">
+                    <div class="timeline-image">
+                            <h4>How 
+                                <br/>
+                                to Use 
+                                <br/>
+                                the Model?</h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-body"><p class=" ">STEP 1: Go to home. <br> STEP 2: Click the container of the model. <br> STEP 3: Fill out the following requirements. <br> STEP 4: Then click enter or predict to see the predicted result. </p></div>
+                        </div>
+                    </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
@@ -159,8 +171,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Percentage of Each Cell Type</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia5.jpg')}}" alt="..." />
                                     <p>Here we can see the pie graph of the cell types ALL and Normal. We have 68 percent for Acute Lymphoblastic Leukemia and the remaining 32 percent for Normal.</p>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia5.jpg')}}" alt="..." />
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -182,8 +195,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Get the Shape of the Image</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia6.jpg')}}" alt="..." />
                                     <p>Here we can see the corresponding value of the height, width, and color channels of the image.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia6.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -205,8 +219,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Image Absolute Paths for Cancer Cells and Normal Cells</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia7.jpg')}}" alt="..." />
                                     <p>Here we can see the code for the absolute paths of the cells and the output value.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia7.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -228,8 +243,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Random Sample of Normal and ALL Cells</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia8.jpg')}}" alt="..." />
                                     <p>Here we can see the image presentation of 3 random sample of Normal and ALL cell type that we use in the model.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia8.jpg')}}" alt="..." />
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -251,36 +267,41 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Code for Building the Model</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia9.jpg')}}" alt="..." />
                                     <p>We have the code for training the data and the corresponding output.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia9.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 4</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia10.jpg')}}" alt="..." />
                                     <p>We have the code for validating the data and the corresponding output.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia10.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 5</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia11.jpg')}}" alt="..." />
                                     <p>We have the code for testing the data and the corresponding output.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia11.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 6</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia12.jpg')}}" alt="..." />
                                     <p>We have the sequential code for building the Convolutional Neural Network model.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia12.jpg')}}" alt="..." />
+                                   
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 7</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia13.jpg')}}" alt="..." />
                                     <p>We have the summary of every layers of the model and corresponding output of the parameters.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia13.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 8</strong>
@@ -307,7 +328,6 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Accuracy & Value Prediction</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia14.jpg')}}" alt="..." />
                                     <p>We have the code for model compilation in a deep learning framework. These are the corresponding meaning of every parameters: 
                                         <br/>
                                         loss='binary_crossentropy': This contention indicates the misfortune work to be utilized amid preparing. 
@@ -324,27 +344,32 @@
                                         'Recall': Too known as affectability or genuine positive rate, Review measures the model's capacity to accurately recognize positive occasions 
                                         (i.e., genuine positives) out of all the real positive occasions.
                                     </p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia14.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 9</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia15.jpg')}}" alt="..." />
                                     <p>We have the code for the total training time.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia15.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 10</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia16.jpg')}}" alt="..." />
                                     <p>We have the code for the accuracy of the CNN model after training and testing the data to the model.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia16.jpg')}}" alt="..." />
+                                   
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 11</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia17.jpg')}}" alt="..." />
                                     <p>We have the code for the test image value prediction of the CNN model.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_leukemia/leukemia17.jpg')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 12</strong>

@@ -69,6 +69,18 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
+                    <div class="timeline-image">
+                            <h4>How 
+                                <br/>
+                                to Use 
+                                <br/>
+                                the Model?</h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-body"><p class=" ">STEP 1: Go to home. <br> STEP 2: Click the container of the model. <br> The agent is chasing the coin while avoiding the obstacles. </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
                                 End
@@ -177,8 +189,15 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Hyperparameters</h2>
+                                    <p>When it comes to Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, there are a few hyperparameters that they share in common. 
+                                        The learning rate determines how fast the agent learns from its experiences, sort of like the speed at which it adapts to new information. 
+                                        The entropy coefficient in SAC controls the balance between exploring new actions and exploiting learned knowledge. It's like a knob that adjusts 
+                                        how much the agent values discovering new things versus sticking to what it knows. The discount factor, often called gamma, affects how much the 
+                                        agent cares about future rewards compared to immediate rewards. It's like deciding how much patience the agent has in considering long-term gains. 
+                                        PPO uses an advantage estimate, which is like a measure of how good the agent's actions were compared to what it expected. This helps in understanding 
+                                        the direction for updating the policy. </p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/hyperparameters.png')}}" alt="..." />
-                                    <p>When it comes to Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, there are a few hyperparameters that they share in common. The learning rate determines how fast the agent learns from its experiences, sort of like the speed at which it adapts to new information. The entropy coefficient in SAC controls the balance between exploring new actions and exploiting learned knowledge. It's like a knob that adjusts how much the agent values discovering new things versus sticking to what it knows. The discount factor, often called gamma, affects how much the agent cares about future rewards compared to immediate rewards. It's like deciding how much patience the agent has in considering long-term gains. PPO uses an advantage estimate, which is like a measure of how good the agent's actions were compared to what it expected. This helps in understanding the direction for updating the policy. </p>
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 1</strong>
@@ -205,8 +224,12 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Neural Network Model</h2>
+                                    <p>In both Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, a neural network is typically employed to represent the policy 
+                                        or value function. This neural network is usually designed with multiple layers, referred to as a deep neural network. Each layer consists of a 
+                                        number of neurons that process and transform the input data. The configuration of the neural network commonly includes parameters such as the 
+                                        number of layers, the number of neurons in each layer, and the activation functions used between layers. These choices impact the capacity and 
+                                        complexity of the neural network, allowing it to capture the intricate patterns and representations required for learning and decision-making.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/network.png')}}" alt="..." />
-                                    <p>In both Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, a neural network is typically employed to represent the policy or value function. This neural network is usually designed with multiple layers, referred to as a deep neural network. Each layer consists of a number of neurons that process and transform the input data. The configuration of the neural network commonly includes parameters such as the number of layers, the number of neurons in each layer, and the activation functions used between layers. These choices impact the capacity and complexity of the neural network, allowing it to capture the intricate patterns and representations required for learning and decision-making.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 2</strong>
@@ -233,9 +256,18 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Trainer Configuration</h2>
+                                    <p>The parameters you mentioned have specific roles in the context of reinforcement learning algorithms. "max_step" refers to the maximum number of steps or 
+                                        interactions the agent will take during training. In this case, it is set to 0.5 million, indicating a predefined limit on the training duration. "time_horizon" 
+                                        determines the number of steps the agent considers as a single trajectory before updating its policy. A value of 64 means the agent updates its policy every 64 
+                                        steps. "summary_freq" specifies how often the algorithm collects and logs summary information, such as rewards or losses. In this case, it occurs every 10,000 
+                                        steps. "keep_checkpoints" is the number of recent checkpoints the algorithm saves for backup or analysis purposes, with 5 indicating the storage of the five most 
+                                        recent checkpoints. "checkpoint_interval" indicates the frequency at which the algorithm saves a checkpoint, allowing for later model restoration or evaluation. 
+                                        In this case, it occurs every 1,000 steps. The "threaded" parameter determines whether the algorithm uses multiple threads for parallel execution. If set to "false," 
+                                        the algorithm runs in a single thread. "init_path" specifies the path to an initial model or checkpoint for the algorithm to start from, and in this case, it is set to 
+                                        null, indicating no initial model is provided. These parameter values are crucial for controlling and fine-tuning the behavior and performance of the reinforcement 
+                                        learning algorithm in various tasks and environments.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Trainer Configuration Common to all trainers.png')}}" alt="..." />
-                                    <p>The parameters you mentioned have specific roles in the context of reinforcement learning algorithms. "max_step" refers to the maximum number of steps or interactions the agent will take during training. In this case, it is set to 0.5 million, indicating a predefined limit on the training duration. "time_horizon" determines the number of steps the agent considers as a single trajectory before updating its policy. A value of 64 means the agent updates its policy every 64 steps. "summary_freq" specifies how often the algorithm collects and logs summary information, such as rewards or losses. In this case, it occurs every 10,000 steps. "keep_checkpoints" is the number of recent checkpoints the algorithm saves for backup or analysis purposes, with 5 indicating the storage of the five most recent checkpoints. "checkpoint_interval" indicates the frequency at which the algorithm saves a checkpoint, allowing for later model restoration or evaluation. In this case, it occurs every 1,000 steps. The "threaded" parameter determines whether the algorithm uses multiple threads for parallel execution. If set to "false," the algorithm runs in a single thread. "init_path" specifies the path to an initial model or checkpoint for the algorithm to start from, and in this case, it is set to null, indicating no initial model is provided. These parameter values are crucial for controlling and fine-tuning the behavior and performance of the reinforcement learning algorithm in various tasks and environments.</p>
-                                    <ul class="list-inline">
+                                   <ul class="list-inline">
                                         <li>
                                             <strong>Graph 3</strong>
                                         </li>
@@ -261,8 +293,8 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Reward</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/reward.png')}}" alt="..." />
                                     <p>//</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/reward.png')}}" alt="..." />
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 4</strong>
@@ -289,22 +321,25 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Environment</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward hist.png')}}" alt="..." />
                                     <p>//</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward hist.png')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 5</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward.png')}}" alt="..." />
                                     <p>//</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward.png')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 6</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment__Episode Length.png')}}" alt="..." />
                                     <p>//</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Episode Length.png')}}" alt="..." />
+                                   
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 7</strong>
@@ -331,29 +366,33 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Losses</h2>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_GAIL Loss.png')}}" alt="..." />
                                     <p>//</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_GAIL Loss.png')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 8</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Policy Loss.png')}}" alt="..." />
                                     <p>//</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Policy Loss.png')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 9</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Pretraining Loss.png')}}" alt="..." />
                                     <p>//</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Pretraining Loss.png')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 10</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Value Loss.png')}}" alt="..." />
                                     <p>//</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Value Loss.png')}}" alt="..." />
+                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 11</strong>
