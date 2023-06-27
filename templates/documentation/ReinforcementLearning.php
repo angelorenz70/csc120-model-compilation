@@ -60,7 +60,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='assets/image_docs/img_obstacle/obstacle10.png')}}" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Reward</h4>
@@ -297,6 +297,8 @@
                                     <h2 class="text-uppercase">Environment</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward hist.png')}}" alt="..." />
                                     <p>In reinforcement learning, cumulative rewards represent the total sum of rewards an agent receives as it interacts with its environment. These rewards are given to the agent based on its performance after each action. The agent's objective is to learn the best strategy or policy to maximize its cumulative reward by making smart choices during its interactions with the environment.</p>
+                                    <p>In reinforcement learning, cumulative rewards represent the total sum of rewards an agent receives as it interacts with its environment. These rewards are given to the agent based on its performance after each action. The agent's objective is to learn the best strategy or policy to maximize its cumulative reward by making smart choices during its interactions with the environment.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 5</strong>
@@ -304,13 +306,17 @@
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward.png')}}" alt="..." />
                                     <p>The cumulative reward history is like a log that keeps track of all the rewards an agent has earned while interacting with its environment. It provides a historical record of the agent's performance, showing how it has been doing over time or across multiple episodes. This record is useful for analyzing the agent's learning progress, comparing different algorithms, and evaluating the effectiveness of its decision-making strategies.</p>
+                                    <p>The cumulative reward history is like a log that keeps track of all the rewards an agent has earned while interacting with its environment. It provides a historical record of the agent's performance, showing how it has been doing over time or across multiple episodes. This record is useful for analyzing the agent's learning progress, comparing different algorithms, and evaluating the effectiveness of its decision-making strategies.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 6</strong>
                                         </li>
                                     </ul>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment__Episode Length.png')}}" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Episode Length.png')}}" alt="..." />
                                     <p>In reinforcement learning, an episode is a full cycle of interaction between an agent and its environment. It begins with the initial state, and the agent takes actions according to its policy, receiving rewards and transitioning to new states until it reaches a terminal state. The episode length is the number of steps or actions the agent takes within a single episode, representing how long the episode lasts and can vary depending on the specific task or environment.</p>
+                                    <p>In reinforcement learning, an episode is a full cycle of interaction between an agent and its environment. It begins with the initial state, and the agent takes actions according to its policy, receiving rewards and transitioning to new states until it reaches a terminal state. The episode length is the number of steps or actions the agent takes within a single episode, representing how long the episode lasts and can vary depending on the specific task or environment.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 7</strong>
@@ -339,6 +345,8 @@
                                     <h2 class="text-uppercase">Losses</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_GAIL Loss.png')}}" alt="..." />
                                     <p>GAIL is an algorithm that learns from expert demonstrations and uses a combination of generator and discriminator networks. The generator network tries to imitate the expert's behavior by generating actions, while the discriminator network predicts whether the actions are from the expert or the generator. The generator improves by minimizing the loss that measures the difference between the generator's actions and the expert's actions predicted by the discriminator.</p>
+                                    <p>GAIL is an algorithm that learns from expert demonstrations and uses a combination of generator and discriminator networks. The generator network tries to imitate the expert's behavior by generating actions, while the discriminator network predicts whether the actions are from the expert or the generator. The generator improves by minimizing the loss that measures the difference between the generator's actions and the expert's actions predicted by the discriminator.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 8</strong>
@@ -346,6 +354,8 @@
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Policy Loss.png')}}" alt="..." />
                                     <p>In reinforcement learning, a policy represents how an agent makes decisions. The policy loss helps update the policy network by measuring the disparity between the actions predicted by the policy and the actions that would yield the highest expected rewards. Minimizing the policy loss allows the policy to progressively enhance its decision-making abilities and make more advantageous choices.</p>
+                                    <p>In reinforcement learning, a policy represents how an agent makes decisions. The policy loss helps update the policy network by measuring the disparity between the actions predicted by the policy and the actions that would yield the highest expected rewards. Minimizing the policy loss allows the policy to progressively enhance its decision-making abilities and make more advantageous choices.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 9</strong>
@@ -353,12 +363,15 @@
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Pretraining Loss.png')}}" alt="..." />
                                     <p>Pretraining is a common technique in deep learning where a neural network's parameters are initialized before further fine-tuning. The pretraining loss refers to the loss function used during this initial phase, which depends on the network's architecture and objective. For instance, in language models, the pretraining loss may involve predicting missing words or forecasting the next word in a sentence based on the preceding words.</p>
+                                    <p>Pretraining is a common technique in deep learning where a neural network's parameters are initialized before further fine-tuning. The pretraining loss refers to the loss function used during this initial phase, which depends on the network's architecture and objective. For instance, in language models, the pretraining loss may involve predicting missing words or forecasting the next word in a sentence based on the preceding words.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 10</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Value Loss.png')}}" alt="..." />
+                                    <p>Value loss is frequently used in reinforcement learning algorithms like Q-learning that focus on estimating values. It quantifies the difference between predicted values, such as state-action values or state values, and the target values derived from the Bellman equation. Minimizing the value loss helps the agent refine its value estimates, leading to more accurate approximations of true values and ultimately enhancing decision-making in reinforcement learning tasks.</p>
                                     <p>Value loss is frequently used in reinforcement learning algorithms like Q-learning that focus on estimating values. It quantifies the difference between predicted values, such as state-action values or state values, and the target values derived from the Bellman equation. Minimizing the value loss helps the agent refine its value estimates, leading to more accurate approximations of true values and ultimately enhancing decision-making in reinforcement learning tasks.</p>
                                     <ul class="list-inline">
                                         <li>
