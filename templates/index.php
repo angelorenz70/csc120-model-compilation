@@ -15,7 +15,8 @@
                     <div id="heart_d" style="background-image: url('{{url_for('static', filename='assets/img/bg-heart-disease.jpg')}}');" class="center"><p><a href="/heart_disease">HEART DISEASE <h6 id="text1">Logistical Regression</h6></a></p></div>
                     <div id="t_migraine" style="background-image: url('{{url_for('static', filename='assets/img/bg-migraine1.jpg')}}');" class="center"><p><a href="/types_migraine">TYPES OF MIGRAINE <h6 id="text1">Neural Network</h6></a></p></div>
                     <div id="t_migraine" style="background-image: url('{{url_for('static', filename='assets/img/Leukemia2.jpg')}}');" class="center"><p><a href="/leukemia">LEUKEMIA <h6 id="text1">Convolutional NN</h6></a></p></div>
-                    <div id="t_migraine" style="background-image: url('{{url_for('static', filename='assets/img/avoid_obs.jpg')}}');" class="center"><p><a href="/rl">FROZEN LAKE <h6 id="text1">Reinfrocement Learning</h6></a></p></div>
+                    <div id="t_migraine" style="background-image: url('{{url_for('static', filename='assets/img/avoid_obs.jpg')}}');" class="center"><p><a href="">AVOID OBSTACLE <h6 id="text1">Reinforcement Learning</h6></a></p></div>
+
                 </div>
             </header>
         </div>

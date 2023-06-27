@@ -86,7 +86,8 @@
         </section>
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio" 
-        style="background: rgb(63,94,251); background: radial-gradient(circle, rgba(192, 192, 192) 0%, rgba(0, 53, 128) 100%);">
+        style="background: rgb(63,94,251); background: radial-gradient(circle, rgba(192, 192, 192) 0%, rgba(0, 53, 128) 100%);
+        ">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">GRAPHS and FIGURES</h2>
