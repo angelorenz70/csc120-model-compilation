@@ -71,6 +71,15 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='assets/image_docs/img_obstacle/obstacle15.png')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Evaluation</h4>
+                            </div>
+                            <div class="timeline-body"><p class=" ">With a total of 108 episodes, 87 episodes successfully reached the coin and 21 episodes is a failure. The agent obtain 81% success rate.</p></div>
+                        </div>
+                    </li>
+                    <li class="">
                     <div class="timeline-image">
                             <h4>How 
                                 <br/>
@@ -101,8 +110,8 @@
         style="background: rgb(63,94,251); background: radial-gradient(circle, rgba(192, 192, 192) 0%, rgba(0, 53, 128) 100%);">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">GRAPHS</h2>
-                    <h3 class="section-subheading  ">Look at this graphs to know the metrics and evaluation of the model.</h3>
+                <h2 class="section-heading text-uppercase">GRAPHS and FIGURES</h2>
+                    <h3 class="section-subheading  ">Look at this graphs to know the metrics and evaluation of the model and this figures to know how the model was made.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -111,7 +120,7 @@
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Hyperparameters</div>
-                                    <div class="portfolio-caption-subheading  ">Graph 1</div>
+                                    <div class="portfolio-caption-subheading  ">Figure 1</div>
                                 </div>
                             </a>
                             
@@ -122,8 +131,8 @@
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Neural Network Model</div>
-                                    <div class="portfolio-caption-subheading  ">Graph 2</div>
+                                    <div class="portfolio-caption-heading">Neural Network Model and Evaluation</div>
+                                    <div class="portfolio-caption-subheading  ">Figure 2-3</div>
                                 </div>
                             </a>
                             
@@ -135,7 +144,7 @@
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Trainer Configuration</div>
-                                    <div class="portfolio-caption-subheading  ">Graph 3</div>
+                                    <div class="portfolio-caption-subheading  ">Figure 4</div>
                                 </div>
                             </a>
                             
@@ -147,7 +156,7 @@
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Reward</div>
-                                    <div class="portfolio-caption-subheading  ">Graph 4</div>
+                                    <div class="portfolio-caption-subheading  ">Graph 1</div>
                                 </div>
                             </a>
                             
@@ -159,7 +168,7 @@
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Environment</div>
-                                    <div class="portfolio-caption-subheading  ">Graph 5-7</div>
+                                    <div class="portfolio-caption-subheading  ">Graph 2-4</div>
                                 </div>
                             </a>
                            
@@ -171,13 +180,12 @@
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Losses</div>
-                                    <div class="portfolio-caption-subheading  ">Graph 8-11</div>
+                                    <div class="portfolio-caption-subheading  ">Graph 5-8</div>
                                 </div>
                             </a>
                            
                         </div>
                     </div>
-                </div>
             </div>
         </section>
         <!-- Portfolio Modals-->
@@ -197,7 +205,7 @@
 
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 1</strong>
+                                            <strong>Figure 1</strong>
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -222,12 +230,15 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Neural Network Model</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/network.png')}}" alt="..." />
-
                                     <p>This configuration specifies the settings for a neural network. It uses a simple encoding method for visual input and does not normalize the data. The network has four layers with 128 hidden units each. Additionally, the memory component of the network has a sequence length of 64 and a memory size of 256.</p>
-
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 2</strong>
+                                            <strong>Figure 2</strong>
+                                        </li>
+                                    </ul>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/pie-chart.png')}}" alt="..." />                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Figure 3: EVALUATION</strong>
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -257,7 +268,7 @@
 
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 3</strong>
+                                            <strong>Figure 4</strong>
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -287,7 +298,7 @@
                                     <p>Agents are given rewards based on their performance or outcomes. These rewards serve as a way to incentivize and reinforce certain behaviors. When an agent successfully reaches a coin, it receives a positive reward of 3, indicating a desirable achievement. On the other hand, if the agent collides with obstacles, it incurs a negative reward of 1, indicating an undesired outcome. By assigning these rewards, the system aims to guide the agents towards maximizing their overall success while avoiding obstacles.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 4</strong>
+                                            <strong>Graph 1</strong>
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -315,21 +326,21 @@
                                     <p>In reinforcement learning, cumulative rewards represent the total sum of rewards an agent receives as it interacts with its environment. These rewards are given to the agent based on its performance after each action. The agent's objective is to learn the best strategy or policy to maximize its cumulative reward by making smart choices during its interactions with the environment.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 5</strong>
+                                            <strong>Graph 2</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward.png')}}" alt="..." />
                                     <p>The cumulative reward history is like a log that keeps track of all the rewards an agent has earned while interacting with its environment. It provides a historical record of the agent's performance, showing how it has been doing over time or across multiple episodes. This record is useful for analyzing the agent's learning progress, comparing different algorithms, and evaluating the effectiveness of its decision-making strategies.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 6</strong>
+                                            <strong>Graph 3</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Episode Length.png')}}" alt="..." />
                                     <p>In reinforcement learning, an episode is a full cycle of interaction between an agent and its environment. It begins with the initial state, and the agent takes actions according to its policy, receiving rewards and transitioning to new states until it reaches a terminal state. The episode length is the number of steps or actions the agent takes within a single episode, representing how long the episode lasts and can vary depending on the specific task or environment.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 7</strong>
+                                            <strong>Graph 4</strong>
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -358,7 +369,7 @@
                                     <p>GAIL is an algorithm that learns from expert demonstrations and uses a combination of generator and discriminator networks. The generator network tries to imitate the expert's behavior by generating actions, while the discriminator network predicts whether the actions are from the expert or the generator. The generator improves by minimizing the loss that measures the difference between the generator's actions and the expert's actions predicted by the discriminator.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 8</strong>
+                                            <strong>Graph 5</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Policy Loss.png')}}" alt="..." />
@@ -367,7 +378,7 @@
 
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 9</strong>
+                                            <strong>Graph 6</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Pretraining Loss.png')}}" alt="..." />
@@ -376,14 +387,14 @@
 
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 10</strong>
+                                            <strong>Graph 7</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Value Loss.png')}}" alt="..." />
                                     <p>Value loss is frequently used in reinforcement learning algorithms like Q-learning that focus on estimating values. It quantifies the difference between predicted values, such as state-action values or state values, and the target values derived from the Bellman equation. Minimizing the value loss helps the agent refine its value estimates, leading to more accurate approximations of true values and ultimately enhancing decision-making in reinforcement learning tasks.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Graph 11</strong>
+                                            <strong>Graph 8</strong>
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">

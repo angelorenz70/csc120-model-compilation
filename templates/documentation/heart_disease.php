@@ -180,9 +180,8 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Attributes of the Heart Attack Dataset</h2>
-                                    <p>Here we have the representation of the input of every attributes and the target prediction.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart5.jpg')}}" alt="..." />
-                                    
+                                    <p>Here we have the representation of the input of every attributes and the target prediction.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -204,9 +203,8 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Average Value of Each Attributes</h2>
-                                    <p>Here we have the average value in each attributes according to the target prediction.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart6.jpg')}}" alt="..." />
-                                    
+                                    <p>Here we have the average value in each attributes according to the target prediction.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -228,10 +226,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">P-values of Each Attributes Indicating the Result</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart7.jpg')}}" alt="..." />
                                     <p>P-value (typically less than 0.05) indicates that the observed result is unlikely to 
                                         have occurred by chance alone, and therefore provides evidence against the null hypothesis.</p>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart7.jpg')}}" alt="..." />
-                                   
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -253,66 +250,58 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Number of Data Based on the Attributes</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart8.jpg')}}" alt="..." />
                                     <p>In the datasets, it count 229,797 of respondents have no Heart Disease and 23,893 of 
                                         respondents have Heart Disease according to age of 1 to 15 years of old.</p>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart8.jpg')}}" alt="..." />
-                                    
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 4</strong>
                                         </li>
                                     </ul>
-                                    <p>Number of respondents that have a heart disease according to age attribute.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart9.jpg')}}" alt="..." />
-                                    
+                                    <p>Number of respondents that have a heart disease according to age attribute.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 5</strong>
                                         </li>
                                     </ul>
-                                    <p>Number of respondents that having a Heart Disease according to Diabetes, 0 represents as None, 1 represents as pre-diabetes, 2 represents as have diabetes.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart10.jpg')}}" alt="..." />
-                                    
+                                    <p>Number of respondents that having a Heart Disease according to Diabetes, 0 represents as None, 1 represents as pre-diabetes, 2 represents as have diabetes.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 6</strong>
                                         </li>
                                     </ul>
-                                    <p>Number of respondents that have Heart Disease according to High Blood Pressure, 0 represents as None, 1 represents as Having a High BP.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart11.jpg')}}" alt="..." />
-                                    
+                                    <p>Number of respondents that have Heart Disease according to High Blood Pressure, 0 represents as None, 1 represents as Having a High BP.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 7</strong>
                                         </li>
                                     </ul>
-                                    <p>Number of respondents that have Heart Disease according to High Cholesterol, 0 represents as None, 1 represents as Having a High Cholesterol.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart12.jpg')}}" alt="..." />
-                                   
+                                    <p>Number of respondents that have Heart Disease according to High Cholesterol, 0 represents as None, 1 represents as Having a High Cholesterol.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 8</strong>
                                         </li>
                                     </ul>
-                                    <p>Number of respondents that have Heart Disease according to they are Smoker or Not, 0 represents as None, 1 represents as Smoker.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart13.jpg')}}" alt="..." />
-                                    
+                                    <p>Number of respondents that have Heart Disease according to they are Smoker or Not, 0 represents as None, 1 represents as Smoker.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 9</strong>
                                         </li>
                                     </ul>
-                                    <p>Number of respondents that have Heart Disease according to they are Stroke or Not, 0 represents as None, 1 represents as person have Strong.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart14.jpg')}}" alt="..." />
-                                    
+                                    <p>Number of respondents that have Heart Disease according to they are Stroke or Not, 0 represents as None, 1 represents as person have Strong.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 10</strong>
                                         </li>
                                     </ul>
-                                    <p>Bar Graph for the average body mass  index that having a  heart disease or not.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart15.jpg')}}" alt="..." />
-                                    
+                                    <p>Bar Graph for the average body mass  index that having a  heart disease or not.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 11</strong>
@@ -339,9 +328,8 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Splitting the Data into Two Sets</h2>
-                                    <p>Here we can see the code for splitting of data into training and testing sets, and total accuracy of the model.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart16.jpg')}}" alt="..." />
-                                    
+                                    <p>Here we can see the code for splitting of data into training and testing sets, and total accuracy of the model.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -363,9 +351,8 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Prediction of Probability with Labels</h2>
-                                    <p>This is the code for printing the predicted labels and we can also see the output.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_heart/heart17.jpg')}}" alt="..." />
-                                    
+                                    <p>This is the code for printing the predicted labels and we can also see the output.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close

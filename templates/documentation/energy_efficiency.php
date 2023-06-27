@@ -183,9 +183,8 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Split the Data into Training and Test Sets</h2>
-                                    <p>Here we can see the code on how to split the data into two sets; training and testing sets.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_energy/energy6.jpg')}}" alt="..." />
-                                    
+                                    <p>Here we can see the code on how to split the data into two sets; training and testing sets.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -207,9 +206,8 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Structure of Linear Regression</h2>
-                                    <p>Here we can see the code for training and evaluating a Linear Regression Model.</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_energy/energy7.jpg')}}" alt="..." />
-                                    
+                                    <p>Here we can see the code for training and evaluating a Linear Regression Model.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -230,15 +228,16 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Metrics Value of Linear Regression</h2><p>We have the table for the values of the metrics of Linear Regression during training (Energy Efficiency = Cooling Load).</p>
+                                    <h2 class="text-uppercase">Metrics Value of Linear Regression</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_energy/energy8.jpg')}}" alt="..." />
-                                     <ul class="list-inline">
+                                    <p>We have the table for the values of the metrics of Linear Regression during training (Energy Efficiency = Cooling Load).</p>
+                                    <ul class="list-inline">
                                         <li>
                                             <strong>Figure 3</strong>
                                         </li>
                                     </ul>
-                                    <p>We have the table for the values of the metrics of Linear Regression during training (Energy Efficiency = Healing Load)</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_energy/energy9.jpg')}}" alt="..." />
+                                    <p>We have the table for the values of the metrics of Linear Regression during training (Energy Efficiency = Healing Load)</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Figure 4</strong>
