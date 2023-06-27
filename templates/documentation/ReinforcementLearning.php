@@ -178,7 +178,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Hyperparameters</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/hyperparameters.png')}}" alt="..." />
-                                    <p>When it comes to Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, there are a few hyperparameters that they share in common. The learning rate determines how fast the agent learns from its experiences, sort of like the speed at which it adapts to new information. The entropy coefficient in SAC controls the balance between exploring new actions and exploiting learned knowledge. It's like a knob that adjusts how much the agent values discovering new things versus sticking to what it knows. The discount factor, often called gamma, affects how much the agent cares about future rewards compared to immediate rewards. It's like deciding how much patience the agent has in considering long-term gains. PPO uses an advantage estimate, which is like a measure of how good the agent's actions were compared to what it expected. This helps in understanding the direction for updating the policy. </p>
+                                    <p>The batch size determines the number of samples the model processes at once, with a value of 1024. The buffer size is the capacity for storing data samples, set at 10240. The learning rate, or the step size in updating the model, is 3.0e-4, and it follows a linear schedule. <br> For the Proximal Policy Optimization (PPO) algorithm, the beta value is 3.0e-3, which controls the strength of the policy change. The beta schedule is constant, meaning it remains the same throughout training. The epsilon value is 0.2, representing the clipping parameter to limit policy changes, and it follows a linear schedule. The lambda value is 0.95, determining the weight between old and new policy updates. The model goes through 3 epochs of training, and it does not have a shared critic network for value estimation.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 1</strong>
@@ -206,7 +206,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Neural Network Model</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/network.png')}}" alt="..." />
-                                    <p>In both Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) algorithms, a neural network is typically employed to represent the policy or value function. This neural network is usually designed with multiple layers, referred to as a deep neural network. Each layer consists of a number of neurons that process and transform the input data. The configuration of the neural network commonly includes parameters such as the number of layers, the number of neurons in each layer, and the activation functions used between layers. These choices impact the capacity and complexity of the neural network, allowing it to capture the intricate patterns and representations required for learning and decision-making.</p>
+                                    <p>This configuration specifies the settings for a neural network. It uses a simple encoding method for visual input and does not normalize the data. The network has four layers with 128 hidden units each. Additionally, the memory component of the network has a sequence length of 64 and a memory size of 256.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 2</strong>
@@ -234,7 +234,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Trainer Configuration</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Trainer Configuration Common to all trainers.png')}}" alt="..." />
-                                    <p>The parameters you mentioned have specific roles in the context of reinforcement learning algorithms. "max_step" refers to the maximum number of steps or interactions the agent will take during training. In this case, it is set to 0.5 million, indicating a predefined limit on the training duration. "time_horizon" determines the number of steps the agent considers as a single trajectory before updating its policy. A value of 64 means the agent updates its policy every 64 steps. "summary_freq" specifies how often the algorithm collects and logs summary information, such as rewards or losses. In this case, it occurs every 10,000 steps. "keep_checkpoints" is the number of recent checkpoints the algorithm saves for backup or analysis purposes, with 5 indicating the storage of the five most recent checkpoints. "checkpoint_interval" indicates the frequency at which the algorithm saves a checkpoint, allowing for later model restoration or evaluation. In this case, it occurs every 1,000 steps. The "threaded" parameter determines whether the algorithm uses multiple threads for parallel execution. If set to "false," the algorithm runs in a single thread. "init_path" specifies the path to an initial model or checkpoint for the algorithm to start from, and in this case, it is set to null, indicating no initial model is provided. These parameter values are crucial for controlling and fine-tuning the behavior and performance of the reinforcement learning algorithm in various tasks and environments.</p>
+                                    <p>These settings pertain to a specific system or program. They define various parameters and configurations. The purpose of these settings is to control aspects such as the maximum number of steps, time horizon, frequency of generating summaries, checkpoint management, threading behavior, and initialization path for the system or program.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 3</strong>
@@ -262,7 +262,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Reward</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/reward.png')}}" alt="..." />
-                                    <p>//</p>
+                                    <p>Agents are given rewards based on their performance or outcomes. These rewards serve as a way to incentivize and reinforce certain behaviors. When an agent successfully reaches a coin, it receives a positive reward of 3, indicating a desirable achievement. On the other hand, if the agent collides with obstacles, it incurs a negative reward of 1, indicating an undesired outcome. By assigning these rewards, the system aims to guide the agents towards maximizing their overall success while avoiding obstacles.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 4</strong>
@@ -290,21 +290,21 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Environment</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward hist.png')}}" alt="..." />
-                                    <p>//</p>
+                                    <p>In reinforcement learning, cumulative rewards represent the total sum of rewards an agent receives as it interacts with its environment. These rewards are given to the agent based on its performance after each action. The agent's objective is to learn the best strategy or policy to maximize its cumulative reward by making smart choices during its interactions with the environment.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 5</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment_Cumulative Reward.png')}}" alt="..." />
-                                    <p>//</p>
+                                    <p>The cumulative reward history is like a log that keeps track of all the rewards an agent has earned while interacting with its environment. It provides a historical record of the agent's performance, showing how it has been doing over time or across multiple episodes. This record is useful for analyzing the agent's learning progress, comparing different algorithms, and evaluating the effectiveness of its decision-making strategies.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 6</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Environment__Episode Length.png')}}" alt="..." />
-                                    <p>//</p>
+                                    <p>In reinforcement learning, an episode is a full cycle of interaction between an agent and its environment. It begins with the initial state, and the agent takes actions according to its policy, receiving rewards and transitioning to new states until it reaches a terminal state. The episode length is the number of steps or actions the agent takes within a single episode, representing how long the episode lasts and can vary depending on the specific task or environment.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 7</strong>
@@ -332,28 +332,28 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Losses</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_GAIL Loss.png')}}" alt="..." />
-                                    <p>//</p>
+                                    <p>GAIL is an algorithm that learns from expert demonstrations and uses a combination of generator and discriminator networks. The generator network tries to imitate the expert's behavior by generating actions, while the discriminator network predicts whether the actions are from the expert or the generator. The generator improves by minimizing the loss that measures the difference between the generator's actions and the expert's actions predicted by the discriminator.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 8</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Policy Loss.png')}}" alt="..." />
-                                    <p>//</p>
+                                    <p>In reinforcement learning, a policy represents how an agent makes decisions. The policy loss helps update the policy network by measuring the disparity between the actions predicted by the policy and the actions that would yield the highest expected rewards. Minimizing the policy loss allows the policy to progressively enhance its decision-making abilities and make more advantageous choices.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 9</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Pretraining Loss.png')}}" alt="..." />
-                                    <p>//</p>
+                                    <p>Pretraining is a common technique in deep learning where a neural network's parameters are initialized before further fine-tuning. The pretraining loss refers to the loss function used during this initial phase, which depends on the network's architecture and objective. For instance, in language models, the pretraining loss may involve predicting missing words or forecasting the next word in a sentence based on the preceding words.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 10</strong>
                                         </li>
                                     </ul>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/Losses_Value Loss.png')}}" alt="..." />
-                                    <p>//</p>
+                                    <p>Value loss is frequently used in reinforcement learning algorithms like Q-learning that focus on estimating values. It quantifies the difference between predicted values, such as state-action values or state values, and the target values derived from the Bellman equation. Minimizing the value loss helps the agent refine its value estimates, leading to more accurate approximations of true values and ultimately enhancing decision-making in reinforcement learning tasks.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 11</strong>
