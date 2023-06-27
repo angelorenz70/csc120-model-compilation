@@ -63,9 +63,11 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>//</h4>
+                                <h4>Reward</h4>
                             </div>
-                            <div class="timeline-body"><p class=" ">//</p></div>
+                            <div class="timeline-body"><p class=" ">Serve as feedback to the agent, guiding it towards learning optimal behaviors. 
+                                Positive rewards reinforce desirable actions, while negative rewards discourage undesired actions, allowing the agent 
+                                to learn and improve its decision-making abilities over time.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
