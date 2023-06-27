@@ -50,11 +50,6 @@
                         </div>
                     </div>
                 </div>
-                <form method="GET" action="/">
-                <div class="p-t-20">
-                    <button class="btn btn--radius btn--green" type="submit">Home</button>
-                </div>
-            </form>
             </header>
         </div>
 {% endblock %}

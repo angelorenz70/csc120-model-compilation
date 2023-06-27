@@ -1,6 +1,6 @@
 body{
-    background: rgb(125,146,255);
-    background: radial-gradient(circle, rgba(125,146,255,1) 0%, rgba(42,0,34,1) 100%);
+    background: rgb(23, 60, 244);
+    background: radial-gradient(circle, rgba(192, 192, 192) 0%, rgba(0, 53, 128) 100%);
 }
 .gallery{
 display: flex;

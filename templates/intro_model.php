@@ -19,7 +19,7 @@
                                     <li><a class="dropdown-item" href="/heart_disease/doc">Heart Disease (LogR) Doc</a></li>
                                     <li><a class="dropdown-item" href="/types_migraine/doc">Types of Migraine (NN) Doc</a></li>
                                     <li><a class="dropdown-item" href="/leukemia/doc">Leukemia (CNN) Doc</a></li>
-                                    <li><a class="dropdown-item" href="/reinforcementLearning/doc">Frozen Lake (RL) Doc</a></li>
+                                    <li><a class="dropdown-item" href="/reinforcementLearning/doc">Avoid Obstacle (RL) Doc</a></li>
                                 </ul>
                             </li>
                         </ul>
