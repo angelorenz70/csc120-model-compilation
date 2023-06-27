@@ -267,6 +267,8 @@
                                     <h2 class="text-uppercase">Reward</h2>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='assets/image_docs/img_obstacle/rl docs/reward.png')}}" alt="..." />
                                     <p>Agents are given rewards based on their performance or outcomes. These rewards serve as a way to incentivize and reinforce certain behaviors. When an agent successfully reaches a coin, it receives a positive reward of 3, indicating a desirable achievement. On the other hand, if the agent collides with obstacles, it incurs a negative reward of 1, indicating an undesired outcome. By assigning these rewards, the system aims to guide the agents towards maximizing their overall success while avoiding obstacles.</p>
+                                    <p>Agents are given rewards based on their performance or outcomes. These rewards serve as a way to incentivize and reinforce certain behaviors. When an agent successfully reaches a coin, it receives a positive reward of 3, indicating a desirable achievement. On the other hand, if the agent collides with obstacles, it incurs a negative reward of 1, indicating an undesired outcome. By assigning these rewards, the system aims to guide the agents towards maximizing their overall success while avoiding obstacles.</p>
+
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Graph 4</strong>
