@@ -22,29 +22,15 @@
         </div>
         <!-- Team-->
         <section class="page-section" id="team1">
-            <div class="container">
+            <div class="container justify-center">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team:</h2>
+                    <h2 class="section-heading text-uppercase">Developed by:</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/member/angel1.jpg')}}" alt="..." />
-                            <h4>Angel Lorraine Morales</h4>
-                            <p>21 Years Old</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
                             <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/member/angelo.jpg')}}" alt="..." />
                             <h4>Tseiammetse Angelo C. Rendon</h4>
-                            <p>20 Years Old</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="{{url_for('static', filename='assets/member/breech.jpg')}}" alt="..." />
-                            <h4>Breech Reca G. Sincolan</h4>
                             <p>21 Years Old</p>
                         </div>
                     </div>

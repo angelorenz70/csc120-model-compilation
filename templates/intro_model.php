@@ -28,8 +28,4 @@
             </nav>
             <h1 id="demotext">INTELLIGENT SYSTEM MODELS</h1>
             <a class="gradient-button" href="#team1"><p id="black_">
-                Our team has embarked on a journey to create an intelligent system model that will 
-                revolutionize the way we think about data. With each member contributing their 
-                expertise and creativity, we are crafting a masterpiece that will stand the test 
-                of time. Our collaboration is fueled by a passion for innovation and a 
-                commitment to excellence, and together, we are forging a path towards a brighter future.</p></a>
+            Create an application that showcases the capabilities of various models in a specific topic by integrating them into a user-friendly interface. This project aims to demonstrate the effectiveness of each model in accurately classifying the desired target. The application will amalgamate all the models that have been developed previously, allowing users to appreciate and compare their performance seamlessly.</p></a>
