@@ -28,4 +28,4 @@
             </nav>
             <h1 id="demotext">INTELLIGENT SYSTEM MODELS</h1>
             <a class="gradient-button" href="#team1"><p id="black_">
-            Create an application that showcases the capabilities of various models in a specific topic by integrating them into a user-friendly interface. This project aims to demonstrate the effectiveness of each model in accurately classifying the desired target. The application will amalgamate all the models that have been developed previously, allowing users to appreciate and compare their performance seamlessly.</p></a>
+            I'LL IMPROVE THIS PORTFOLIO. This is the application that showcases the capabilities of various models in a specific topic by integrating them into a user-friendly interface. This project aims to demonstrate the effectiveness of each model in accurately classifying the desired target. The application will amalgamate all the models that have been developed previously, allowing users to appreciate and compare their performance seamlessly.</p></a>
